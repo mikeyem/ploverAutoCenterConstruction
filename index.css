@@ -1,0 +1,229 @@
+body,
+html {
+  height: 100%;
+  overflow: hidden;
+  margin: auto;
+  background-color: black;
+}
+
+.backgroundImage {
+  background-image: url('pexels-johannes-rapprich-769892.jpg');
+  filter: blur(5px);
+  opacity: 0.9;
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: -1;
+}
+
+.header {
+  color: whitesmoke;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+    Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 28px;
+  width: 100%;
+  z-index: 2;
+  display: inline;
+  position: absolute;
+  top: 2%;
+  right: 5%;
+  text-align: right;
+}
+
+.header a:link {
+  color: whitesmoke;
+  text-decoration: none;
+}
+
+.header a:visited {
+  color: whitesmoke;
+}
+
+.mainMessage {
+  color: whitesmoke;
+  font-weight: bold;
+  font-size: 2.5em;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+    Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  line-height: 0.5em;
+  position: absolute;
+  top: 50%;
+  left: 35%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  text-align: left;
+}
+
+button {
+  margin: auto;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+button:hover {
+  color: whitesmoke;
+  background-color: black;
+}
+
+.socialArea {
+  color: whitesmoke;
+  font-size: 16px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+    Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  position: absolute;
+  top: 75%;
+  left: 12.5%;
+  transform: translate(-50%, -50%);
+  text-align: left;
+}
+
+.socialArea a {
+  color: whitesmoke;
+}
+
+/*Desktop*/
+@media only screen and (min-width: 1441px) {
+  .header {
+    top: 2%;
+    right: 5%;
+  }
+
+  .socialArea {
+    top: 75%;
+    left: 20%;
+  }
+}
+
+/*Laptop*/
+@media only screen and (min-width: 1281px) and (max-width: 1440px) {
+  .header {
+    top: 2%;
+    right: 5%;
+  }
+
+  .socialArea {
+    top: 75%;
+    left: 15%;
+  }
+}
+
+@media only screen and (min-width: 1201px) and (max-width: 1280px) {
+  .header {
+    top: 2%;
+    right: 5%;
+  }
+
+  .socialArea {
+    top: 75%;
+    left: 12%;
+  }
+}
+
+/* LG Tablet */
+@media only screen and (min-width: 1025px) and (max-width: 1200px) {
+  .header {
+    font-size: 24px;
+    text-align: center;
+    top: 90%;
+    right: 0;
+  }
+
+  .mainMessage {
+    font-size: 36px;
+    line-height: 2em;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    text-align: center;
+  }
+
+  .socialArea {
+    top: 75%;
+    left: 50%;
+    text-align: center;
+  }
+}
+
+/*MD Tablet*/
+@media only screen and (min-width: 811px) and (max-width: 1024px) {
+  .header {
+    font-size: 24px;
+    text-align: center;
+    top: 90%;
+    right: 0;
+  }
+
+  .mainMessage {
+    font-size: 36px;
+    line-height: 2em;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    text-align: center;
+  }
+
+  .socialArea {
+    top: 70%;
+    left: 50%;
+    text-align: center;
+  }
+}
+
+/*SM Tablets*/
+@media only screen and (min-width: 481px) and (max-width: 810px) {
+  .header {
+    font-size: 20px;
+    text-align: center;
+    top: 90%;
+    right: 0;
+  }
+
+  .mainMessage {
+    font-size: 36px;
+    line-height: 2em;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    text-align: center;
+  }
+
+  .mainMessage p {
+    line-height: 28px;
+  }
+
+  .socialArea {
+    top: 75%;
+    left: 50%;
+    text-align: center;
+  }
+}
+
+/*Mobile*/
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+  .header {
+    font-size: 14px;
+    text-align: center;
+    position: absolute;
+    top: 90%;
+    right: 0;
+  }
+  .mainMessage {
+    font-size: 1.5em;
+    line-height: 48px;
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    text-align: center;
+  }
+
+  .mainMessage p {
+    line-height: 24px;
+  }
+
+  .socialArea {
+    top: 75%;
+    left: 50%;
+    text-align: center;
+  }
+}
